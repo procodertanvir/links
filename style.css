@@ -6,7 +6,7 @@ body{
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 thead{
-   background-image: linear-gradient(to right, #8d2ec4, #48f7a5);
+   background-color: #feaa48;
    color: #fff;
 }
 th,td{
@@ -25,12 +25,13 @@ table{
 }
 
 tbody{
-   background-image: linear-gradient(to right, #7474BF, #fafafa, #348AC7);
+   background-color: #fd586b;
    color: #fff;
 }
 
 td a{
    text-decoration: none;
+   color: #fff;
 }
 
 #table{
