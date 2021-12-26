@@ -5,6 +5,16 @@
 body{
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+#third_heading{
+   text-align: center; margin: 20px 0; font-size: 22px; display: flex; justify-content: center
+}
+
+#inner_heading_emoji{
+   width:30px; margin-left: 5px;
+}
+
+
 thead{
    background-color: #feaa48;
    color: #fff;
@@ -33,6 +43,20 @@ tbody{
 td a{
    text-decoration: none;
    color: #fff;
+   transition: .5s;
+}
+
+td{
+   transition: .5s;
+}
+
+td:hover a{
+   /* text-decoration: underline; */
+   color: #b7ff5f;
+}
+
+td a:hover{
+   text-decoration: underline;
 }
 
 #table{
@@ -81,6 +105,13 @@ td a{
       height: 0;
       display: none;
   }
+
+  #third_heading{
+     font-size: 16px;
+  }
+  #inner_heading_emoji{
+     width: 25px;
+  }
   
 }
 @media (max-width: 500px) {
@@ -88,5 +119,26 @@ td a{
       max-width: 350px;
       margin: 0 auto;
       box-shadow: 4px 4px 20px rgba(0,0,0,.5);
+   }
+}
+
+@media (max-width: 420px) {
+   #third_heading{
+      font-size: 14px;
+   }
+
+   #inner_heading_emoji{
+      width: 18px;
+   }
+}
+
+@media (max-width: 350px) {
+   #third_heading{
+      flex-direction: column;
+   }
+   #inner_heading_emoji{
+      margin: 0 auto;
+      width: 35px;
+      margin-top: 10px;
    }
 }
